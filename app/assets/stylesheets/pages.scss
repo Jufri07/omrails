@@ -1,6 +1,23 @@
-.jumbotron.jumbotron-home {
-  background-image: url(image_path('home-bg.jpg'));
+.jumbotron-fluid {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(image_path('home-bg.jpg'));
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  color: white;
+  height: 70vh;
+  overflow : hidden;
+
+  .container {
+    text-align: center;
+    padding: 90px;
+  }
+
+  .btn.btn-primary.btn-md {
+    margin-top: 50px;
+  }
+}
+
+.header.col-md-4 {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
