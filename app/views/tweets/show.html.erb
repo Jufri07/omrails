@@ -1,6 +1,14 @@
-<p style="color: green"><%= notice %></p>
+<p id="notice"><%= notice %></p>
 
-<%= render @tweet %>
+<p>
+  <strong>User:</strong>
+  <%= @tweet.user %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @tweet.content %>
+</p>
 
 <div>
   <%= link_to "Edit this tweet", edit_tweet_path(@tweet) %> |
