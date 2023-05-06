@@ -12,17 +12,17 @@ class TweetsController < ApplicationController
 
   # GET /tweets/new
   def new
-    @tweet = Tweet.new
+    @tweet = current_user.tweets.new
   end
 
   # GET /tweets/1/edit
   def edit
-    @tweet = Tweet.find(params[:id])
+    @tweet = current_user.tweets.find(params[:id])
   end
 
   # POST /tweets or /tweets.json
   def create
-    @tweet = Tweet.new(tweet_params)
+    @tweet = current_user.tweets.new(tweet_params)
     if @tweet.save
       redirect_to tweet_url(@tweet), notice: "Tweet was successfully created."
     else
@@ -32,7 +32,7 @@ class TweetsController < ApplicationController
 
   # PATCH/PUT /tweets/1 or /tweets/1.json
   def update
-    @tweet = Tweet.find(params[:id])
+    @tweet = current_user.tweets.find(params[:id])
     if @tweet.update(tweet_params)
       redirect_to tweet_url(@tweet), notice: "Tweet was successfully updated."
     else
@@ -42,7 +42,7 @@ class TweetsController < ApplicationController
 
   # DELETE /tweets/1 or /tweets/1.json
   def destroy
-    @tweet = Tweet.find(params[:id])
+    @tweet = current_user.tweets.find(params[:id])
     @tweet.destroy
     redirect_to tweets_url, notice: "Tweet was successfully destroyed."
   end
