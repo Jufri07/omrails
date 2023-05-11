@@ -10,14 +10,33 @@
 }
 
 h1.contact {
-  padding-top: 10px;
-  padding-left: 20px;
+  padding-top: 30px;
+  padding-left: 30px;
 }
 
 p.contact {
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 .contact {
-  padding-left: 20px;
+  padding-left: 30px;
+}
+
+.container-about {
+  background-image: url("about-bg.jpg");
+  background-size: auto;
+  height: 100vh;
+}
+
+h1.about {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+p.about {
+  padding-left: 30px;
+}
+
+.container-tweets {
+  padding: 50px 20px;
 }
