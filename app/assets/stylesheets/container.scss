@@ -1,7 +1,11 @@
 .container {
   padding-top: 50px;
+  text-align: center;
 }
 
+.container h1 {
+  padding-top: 50px;
+}
 
 .container-contact {
   background-image: url("contact-bg2.jpg");
@@ -39,4 +43,8 @@ p.about {
 
 .container-tweets {
   padding: 50px 20px;
+}
+
+body {
+  background-color: bisque;
 }
