@@ -19,8 +19,9 @@ a:hover { text-decoration: none; }
 
 a:active { text-decoration: none; }
 
-button.btn.btn-outline-light.btn-rounded a {
+.btn.btn-dark.btn-rounded a {
  font-weight: bold;
+ color: white;
 }
 
 .button-destroy {
