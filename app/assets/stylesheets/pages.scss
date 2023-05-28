@@ -49,8 +49,20 @@ body {
 
 .col-md-4 {
   margin-bottom: 30px;
+  display: flex;
 }
 
-.card-body {
+// .card-body {
+//   display: flex;
+// }
+
+.card-title {
   display: flex;
+  align-content: center;
+}
+
+.card-text {
+  display: flex;
+  align-content: center;
+  height: 50vh;
 }
